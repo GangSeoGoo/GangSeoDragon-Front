@@ -1,6 +1,4 @@
-
 *{
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -33,4 +31,30 @@ a{
 
 a:nth-child(1){
     border-left: none;
+}
+
+.fruit--div{
+    display: flex;
+    width: 96%;
+    height: 240px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.fruit--content{
+    text-align: left;
+}
+
+.fruit--img{
+    float: left;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.fruit--name{
+    margin: 20px;
 }

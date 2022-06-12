@@ -2,20 +2,20 @@ import React from 'react';
 import './App.css';
 import Header from "./components/header"
 import Navbar from "./components/navbar"
-import Weather from "./components/weather"
+import Fruits from "./components/fruits"
+import data from "./fruits"
 
-class App extends React.Component {
-
-  render() {
+function App(){
+  const fruit = data.map((item) => {
+    return <Fruits {...item}/>;
+  });
     return (
         <div className="App">
           <Header />
           <Navbar />
-          <Weather />
+          <section className='fruits'>{fruit}</section>
         </div>
     );
-    ;
-  }
 }
 
 export default App;
